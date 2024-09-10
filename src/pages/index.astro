@@ -33,43 +33,37 @@ const work = await Promise.all(
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, I'm Nano <span class="text-xl">👋🏻</span> 
+      Hola! Soy Tomy <span class="text-xl">👋🏻</span> 
     </h4>
     <div class="space-y-16">
       <section>
-        <article class="space-y-4">
-          <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and blog for developers. 
-            I am an even more lightweight version of my popular theme
-            <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
-              Astro Sphere
+    <article class="space-y-4">
+        <p class="animate">
+            Bienvenido a mi blog, donde cada semana compartiré pensamientos, artículos y reflexiones que capturan mi interés personal y profesional.
+        </p>
+        <p class="animate">
+            Para este proyecto he elegido utilizar la tecnología Astro, valorando su versatilidad y facilidad de implementación, ideal para adaptarse rápidamente a mis necesidades creativas y técnicas.
+        </p>
+        <p class="animate">
+            Aquí encontrarás una colección de ideas, artículos y proyectos desarrollados a lo largo de mi carrera como desarrollador, diseñador UX/UI y líder de proyectos.
+        </p>
+        <p class="animate">
+            Si deseas explorar más o utilizar estos recursos, te invito a copiar el repositorio en
+            <Link href="https://github.com/tomymaritano/linkedin-blog" aria-label="visita mi GitHub" external>
+              GitHub
             </Link>.
-            I have a lighthouse scores of 100 across the board for performance, 
-            accesibility, best practices and SEO.
-          </p>
-          <p class="animate">
-            I come packed with full type safety, a sitemap, an rss feed, markdown 
-            and mdx support (use components in your markdown) through astro integrations.
-            I am styled with tailwind and come preconfigured with light, dark and 
-            system/os theme preferences out of the box.
-          </p>
-          <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
-            </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
-          </p>
-        </article>
-      </section>
+        </p>
+    </article>
+</section>
+
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
+            últimos post
           </h5>
           <Link href="/blog">
-            See all posts
+            Ver mas
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
@@ -84,10 +78,10 @@ const work = await Promise.all(
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Work Experience
+            Experiencia
           </h5>
           <Link href="/work">
-            See all work
+            Ver mas
           </Link>
         </div>
         <ul class="flex flex-col space-y-4">
@@ -102,9 +96,6 @@ const work = await Promise.all(
               <div class="text-sm opacity-75">
                 {entry.data.role}
               </div>
-              <article>
-                <entry.Content />
-              </article>
             </li>
           ))}
         </ul>
@@ -113,7 +104,7 @@ const work = await Promise.all(
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
+            Proyectos recientes
           </h5>
           <Link href="/projects">
             See all projects
@@ -130,12 +121,11 @@ const work = await Promise.all(
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
+          Conectemos!
         </h5>
         <article>
           <p>
-            If you want to get in touch with me about something or just to say hi,
-            reach out on social media or send me an email.
+            Podes enviar seguirme en las redes o mandarme un email, con gusto lo voy a recibir!
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
